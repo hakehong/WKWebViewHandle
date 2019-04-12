@@ -1,8 +1,8 @@
 //
-//  HQWKWebViewController.h
+//  HQURLProtocolViewController.h
 //  loadFileDemo
 //
-//  Created by 洪清 on 2019/4/9.
+//  Created by 洪清 on 2019/4/11.
 //  Copyright © 2019 autoforce. All rights reserved.
 //
 
@@ -10,7 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HQWKWebViewController : UIViewController
+@interface HQURLProtocolViewController : UIViewController
+
 @end
 
 NS_ASSUME_NONNULL_END

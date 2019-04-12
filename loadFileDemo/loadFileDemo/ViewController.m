@@ -16,60 +16,54 @@
 #import "PAirSandbox.h"
 #import "SSZipArchive.h"
 #import "AFNetworking.h"
-#import "MyURLProtocol.h"
+#import "MagicURLProtocol.h"
+#import "HQURLProtocolViewController.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) UIButton *downloadBtn;
-//0加载本地 1、拦截webp图片替换
-@property (nonatomic,assign) NSInteger type;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *arr = [[NSArray alloc]initWithObjects:@"本地webP",@"本地图片", nil];
-    UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:arr];
-    segment.selectedSegmentIndex =0;
-    [segment addTarget:self action:@selector(segmentSwitch:) forControlEvents:UIControlEventValueChanged];
-    //添加到主视图
-    [self.view addSubview:segment];
-    self.type =0;
-    [segment mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.view.mas_top).offset(100);
-    }];
-    
     
     [[PAirSandbox sharedInstance] enableSwipe];
-    //https://1111-1258193047.cos.ap-chengdu.myqcloud.com/test.zip
+    
     self.downloadBtn =[HQFactoryUI buttonWithTitle:@"下载" titleColor:[UIColor whiteColor] backgroundColor:[UIColor redColor] fontSize:16 target:self action:@selector(download)];
     self.downloadBtn.layer.cornerRadius =5;
-    UIButton *btn2 =[HQFactoryUI buttonWithTitle:@"加载本地webp_html" titleColor:[UIColor whiteColor] backgroundColor:[UIColor blueColor] fontSize:16 target:self action:@selector(pushVc)];
-    btn2.layer.cornerRadius =5;
     [self.view addSubview:self.downloadBtn];
+    
+    UIButton *btn2 =[HQFactoryUI buttonWithTitle:@"js代码替换WebP图片" titleColor:[UIColor whiteColor] backgroundColor:[UIColor blueColor] fontSize:16 target:self action:@selector(pushVc)];
+    btn2.layer.cornerRadius =5;
     [self.view addSubview:btn2];
+    
+    UIButton *btn3 =[HQFactoryUI buttonWithTitle:@"拦截替换WebP图片" titleColor:[UIColor whiteColor] backgroundColor:[UIColor purpleColor] fontSize:16 target:self action:@selector(pushVc2)];
+    btn3.layer.cornerRadius =5;
+    [self.view addSubview:btn3];
 
     [self.downloadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
-        make.bottom.equalTo(self.view.mas_centerY).offset(-30);
+        make.top.equalTo(self.view.mas_top).offset(200);
         make.size.mas_equalTo(CGSizeMake(200, 50));
     }];
+    
     [btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.view.mas_centerY).offset(30);
+        make.top.equalTo(self.downloadBtn.mas_bottom).offset(30);
         make.size.mas_equalTo(CGSizeMake(200, 50));
     }];
-}
-
--(void)segmentSwitch:(UISegmentedControl *)sender
-{
-    self.type =sender.selectedSegmentIndex;
+    
+    [btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.top.equalTo(btn2.mas_bottom).offset(30);
+        make.size.mas_equalTo(CGSizeMake(200, 50));
+    }];
 }
 
 - (IBAction)delectFile:(id)sender {
     NSError *error;
-    [[NSFileManager defaultManager]removeItemAtPath:[NSString stringWithFormat:@"%@/%@.zip",documentPath,self.type==0?@"test":@"test2"] error:&error];
+    [[NSFileManager defaultManager]removeItemAtPath:[NSString stringWithFormat:@"%@/test.zip",documentPath] error:&error];
     if (error) {
         [HQTool showAlertWithMessage:@"删除失败"];
     }else{
@@ -79,17 +73,13 @@
 
 -(void)download
 {
-    BOOL result = [[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/%@.zip",documentPath,self.type==0?@"test":@"test2"]];
+    BOOL result = [[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/test.zip",documentPath]];
     if (result) {
         [HQTool showAlertWithMessage:@"已经下载过这个文件了"];
         return;
     }
-    NSString *url;
-    if (self.type ==0) {
-        url =@"https://github.com/hakehong/testLocalWebView/raw/master/test.zip";
-    }else{
-        url =@"https://github.com/hakehong/testLocalWebView/raw/master/test2.zip";
-    }
+    NSString *url = @"https://github.com/hakehong/testLocalWebView/raw/master/test.zip";
+   
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
@@ -113,9 +103,15 @@
 -(void)pushVc
 {
     HQWKWebViewController *vc  =[HQWKWebViewController new];
-    vc.viewType =self.type;
     [self.navigationController pushViewController:vc animated:YES];
     
+}
+
+-(void)pushVc2
+{
+    [NSURLProtocol registerClass:[MagicURLProtocol class]];
+    HQURLProtocolViewController *vc =[HQURLProtocolViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

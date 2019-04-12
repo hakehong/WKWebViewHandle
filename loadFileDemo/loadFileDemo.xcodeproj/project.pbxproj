@@ -19,18 +19,18 @@
 		931D11B3225C53F400EAF8E1 /* UIColor+CCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11B1225C53F400EAF8E1 /* UIColor+CCColor.m */; };
 		931D11B6225C55A900EAF8E1 /* HQTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11B5225C55A900EAF8E1 /* HQTool.m */; };
 		931D11BB225C6EC500EAF8E1 /* HQWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11BA225C6EC500EAF8E1 /* HQWKWebViewController.m */; };
-		931D11C1225C905800EAF8E1 /* MyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11BE225C905800EAF8E1 /* MyURLProtocol.m */; };
-		931D11C2225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11BF225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.m */; };
-		931D11CF225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11CE225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.m */; };
 		931D11D1225C972000EAF8E1 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931D11D0225C972000EAF8E1 /* WebP.framework */; };
 		931D11D3225C9D1500EAF8E1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931D11D2225C9D1500EAF8E1 /* CoreServices.framework */; };
 		931D11D5225C9DB100EAF8E1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931D11D4225C9DB100EAF8E1 /* CoreFoundation.framework */; };
 		931D11D7225C9E2A00EAF8E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931D11D6225C9E2A00EAF8E1 /* MobileCoreServices.framework */; };
 		931D11D9225CA3C000EAF8E1 /* TanlentC-Webp.js in Resources */ = {isa = PBXBuildFile; fileRef = 931D11D8225CA3C000EAF8E1 /* TanlentC-Webp.js */; };
 		931D11DC225CA52000EAF8E1 /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D11DA225CA52000EAF8E1 /* UIImage+Ext.m */; };
-		939DC38F225D822E003D30E2 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC38D225D822E003D30E2 /* UIImage+WebP.m */; };
 		939DC391225D980D003D30E2 /* test22.webp in Resources */ = {isa = PBXBuildFile; fileRef = 939DC390225D980C003D30E2 /* test22.webp */; };
-		939DC394225DA1F6003D30E2 /* UIImage+WebP2.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC393225DA1F6003D30E2 /* UIImage+WebP2.m */; };
+		939DC394225DA1F6003D30E2 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC393225DA1F6003D30E2 /* UIImage+WebP.m */; };
+		939DC39B225ED3C4003D30E2 /* MagicWebViewWebPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC395225ED3C3003D30E2 /* MagicWebViewWebPManager.m */; };
+		939DC39C225ED3C4003D30E2 /* NSURLProtocol+MagicWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC396225ED3C3003D30E2 /* NSURLProtocol+MagicWebView.m */; };
+		939DC39D225ED3C4003D30E2 /* MagicURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC397225ED3C3003D30E2 /* MagicURLProtocol.m */; };
+		939DC3A0225ED580003D30E2 /* HQURLProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939DC39F225ED580003D30E2 /* HQURLProtocolViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,12 +56,6 @@
 		931D11B8225C69C400EAF8E1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		931D11B9225C6EC500EAF8E1 /* HQWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQWKWebViewController.h; sourceTree = "<group>"; };
 		931D11BA225C6EC500EAF8E1 /* HQWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQWKWebViewController.m; sourceTree = "<group>"; };
-		931D11BD225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WKWebVIew.h"; sourceTree = "<group>"; };
-		931D11BE225C905800EAF8E1 /* MyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyURLProtocol.m; sourceTree = "<group>"; };
-		931D11BF225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WKWebVIew.m"; sourceTree = "<group>"; };
-		931D11C0225C905800EAF8E1 /* MyURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyURLProtocol.h; sourceTree = "<group>"; };
-		931D11CD225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+CYLNSURLProtocolExtension.h"; sourceTree = "<group>"; };
-		931D11CE225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+CYLNSURLProtocolExtension.m"; sourceTree = "<group>"; };
 		931D11D0225C972000EAF8E1 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		931D11D2225C9D1500EAF8E1 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		931D11D4225C9DB100EAF8E1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -69,11 +63,17 @@
 		931D11D8225CA3C000EAF8E1 /* TanlentC-Webp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "TanlentC-Webp.js"; sourceTree = "<group>"; };
 		931D11DA225CA52000EAF8E1 /* UIImage+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
 		931D11DB225CA52000EAF8E1 /* UIImage+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
-		939DC38D225D822E003D30E2 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
-		939DC38E225D822E003D30E2 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
 		939DC390225D980C003D30E2 /* test22.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = test22.webp; sourceTree = "<group>"; };
-		939DC392225DA1F6003D30E2 /* UIImage+WebP2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP2.h"; sourceTree = "<group>"; };
-		939DC393225DA1F6003D30E2 /* UIImage+WebP2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP2.m"; sourceTree = "<group>"; };
+		939DC392225DA1F6003D30E2 /* UIImage+WebP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		939DC393225DA1F6003D30E2 /* UIImage+WebP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		939DC395225ED3C3003D30E2 /* MagicWebViewWebPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicWebViewWebPManager.m; sourceTree = "<group>"; };
+		939DC396225ED3C3003D30E2 /* NSURLProtocol+MagicWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+MagicWebView.m"; sourceTree = "<group>"; };
+		939DC397225ED3C3003D30E2 /* MagicURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicURLProtocol.m; sourceTree = "<group>"; };
+		939DC398225ED3C4003D30E2 /* NSURLProtocol+MagicWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+MagicWebView.h"; sourceTree = "<group>"; };
+		939DC399225ED3C4003D30E2 /* MagicWebViewWebPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicWebViewWebPManager.h; sourceTree = "<group>"; };
+		939DC39A225ED3C4003D30E2 /* MagicURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicURLProtocol.h; sourceTree = "<group>"; };
+		939DC39E225ED580003D30E2 /* HQURLProtocolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQURLProtocolViewController.h; sourceTree = "<group>"; };
+		939DC39F225ED580003D30E2 /* HQURLProtocolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQURLProtocolViewController.m; sourceTree = "<group>"; };
 		BE251E4D9165081719AA751B /* libPods-loadFileDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-loadFileDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DD94C49CD4D7EC74613A38 /* Pods-loadFileDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loadFileDemo.debug.xcconfig"; path = "Target Support Files/Pods-loadFileDemo/Pods-loadFileDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +133,8 @@
 				931D1198225C4F3500EAF8E1 /* ViewController.m */,
 				931D11B9225C6EC500EAF8E1 /* HQWKWebViewController.h */,
 				931D11BA225C6EC500EAF8E1 /* HQWKWebViewController.m */,
+				939DC39E225ED580003D30E2 /* HQURLProtocolViewController.h */,
+				939DC39F225ED580003D30E2 /* HQURLProtocolViewController.m */,
 				939DC390225D980C003D30E2 /* test22.webp */,
 				931D11D8225CA3C000EAF8E1 /* TanlentC-Webp.js */,
 				931D119A225C4F3500EAF8E1 /* Main.storyboard */,
@@ -147,8 +149,6 @@
 		931D11AA225C4F8400EAF8E1 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				939DC38E225D822E003D30E2 /* UIImage+WebP.h */,
-				939DC38D225D822E003D30E2 /* UIImage+WebP.m */,
 				931D11DB225CA52000EAF8E1 /* UIImage+Ext.h */,
 				931D11DA225CA52000EAF8E1 /* UIImage+Ext.m */,
 				931D11B2225C53F400EAF8E1 /* UIColor+CCColor.h */,
@@ -160,8 +160,8 @@
 				931D11B4225C55A900EAF8E1 /* HQTool.h */,
 				931D11B5225C55A900EAF8E1 /* HQTool.m */,
 				931D11B8225C69C400EAF8E1 /* Header.h */,
-				939DC392225DA1F6003D30E2 /* UIImage+WebP2.h */,
-				939DC393225DA1F6003D30E2 /* UIImage+WebP2.m */,
+				939DC392225DA1F6003D30E2 /* UIImage+WebP.h */,
+				939DC393225DA1F6003D30E2 /* UIImage+WebP.m */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -169,12 +169,12 @@
 		931D11BC225C903B00EAF8E1 /* URLProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				931D11C0225C905800EAF8E1 /* MyURLProtocol.h */,
-				931D11BE225C905800EAF8E1 /* MyURLProtocol.m */,
-				931D11BD225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.h */,
-				931D11BF225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.m */,
-				931D11CD225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.h */,
-				931D11CE225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.m */,
+				939DC39A225ED3C4003D30E2 /* MagicURLProtocol.h */,
+				939DC397225ED3C3003D30E2 /* MagicURLProtocol.m */,
+				939DC399225ED3C4003D30E2 /* MagicWebViewWebPManager.h */,
+				939DC395225ED3C3003D30E2 /* MagicWebViewWebPManager.m */,
+				939DC398225ED3C4003D30E2 /* NSURLProtocol+MagicWebView.h */,
+				939DC396225ED3C3003D30E2 /* NSURLProtocol+MagicWebView.m */,
 			);
 			path = URLProtocol;
 			sourceTree = "<group>";
@@ -288,20 +288,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				939DC394225DA1F6003D30E2 /* UIImage+WebP2.m in Sources */,
+				939DC394225DA1F6003D30E2 /* UIImage+WebP.m in Sources */,
 				931D1199225C4F3500EAF8E1 /* ViewController.m in Sources */,
-				939DC38F225D822E003D30E2 /* UIImage+WebP.m in Sources */,
 				931D11B3225C53F400EAF8E1 /* UIColor+CCColor.m in Sources */,
-				931D11C1225C905800EAF8E1 /* MyURLProtocol.m in Sources */,
 				931D11BB225C6EC500EAF8E1 /* HQWKWebViewController.m in Sources */,
-				931D11C2225C905800EAF8E1 /* NSURLProtocol+WKWebVIew.m in Sources */,
 				931D11A4225C4F3700EAF8E1 /* main.m in Sources */,
 				931D11B6225C55A900EAF8E1 /* HQTool.m in Sources */,
-				931D11CF225C90CB00EAF8E1 /* NSURLRequest+CYLNSURLProtocolExtension.m in Sources */,
+				939DC39B225ED3C4003D30E2 /* MagicWebViewWebPManager.m in Sources */,
 				931D11B0225C53CD00EAF8E1 /* HQFactoryUI.m in Sources */,
 				931D11DC225CA52000EAF8E1 /* UIImage+Ext.m in Sources */,
 				931D1196225C4F3500EAF8E1 /* AppDelegate.m in Sources */,
+				939DC39D225ED3C4003D30E2 /* MagicURLProtocol.m in Sources */,
+				939DC3A0225ED580003D30E2 /* HQURLProtocolViewController.m in Sources */,
 				931D11AD225C4F9300EAF8E1 /* PAirSandbox.m in Sources */,
+				939DC39C225ED3C4003D30E2 /* NSURLProtocol+MagicWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

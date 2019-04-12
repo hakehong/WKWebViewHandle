@@ -1,42 +1,26 @@
 //
 //  UIImage+WebP.h
-//  iOS-WebP
+//  SDWebImage
 //
-//  Created by Sean Ooi on 12/21/13.
-//  Copyright (c) 2013 Sean Ooi. All rights reserved.
+//  Created by Olivier Poitrey on 07/06/13.
+//  Copyright (c) 2013 Dailymotion. All rights reserved.
 //
 
+#ifdef SD_WEBP
+
 #import <UIKit/UIKit.h>
-#import <WebP/decode.h>
-#import <Webp/encode.h>
+
+// Fix for issue #416 Undefined symbols for architecture armv7 since WebP introduction when deploying to device
+void WebPInitPremultiplyNEON(void);
+
+void WebPInitUpsamplersNEON(void);
+
+void VP8DspInitNEON(void);
 
 @interface UIImage (WebP)
 
-+ (UIImage*)imageWithWebPData:(NSData*)imgData;
-
-+ (UIImage*)imageWithWebP:(NSString*)filePath;
-
-+ (NSData*)imageToWebP:(UIImage*)image quality:(CGFloat)quality;
-
-+ (void)imageToWebP:(UIImage*)image
-            quality:(CGFloat)quality
-              alpha:(CGFloat)alpha
-             preset:(WebPPreset)preset
-    completionBlock:(void (^)(NSData* result))completionBlock
-       failureBlock:(void (^)(NSError* error))failureBlock;
-
-+ (void)imageToWebP:(UIImage*)image
-            quality:(CGFloat)quality
-              alpha:(CGFloat)alpha
-             preset:(WebPPreset)preset
-        configBlock:(void (^)(WebPConfig* config))configBlock
-    completionBlock:(void (^)(NSData* result))completionBlock
-       failureBlock:(void (^)(NSError* error))failureBlock;
-
-+ (void)imageWithWebP:(NSString*)filePath
-      completionBlock:(void (^)(UIImage* result))completionBlock
-         failureBlock:(void (^)(NSError* error))failureBlock;
-
-- (UIImage*)imageByApplyingAlpha:(CGFloat)alpha;
++ (UIImage *)sd_imageWithWebPData:(NSData *)data;
 
 @end
+
+#endif
